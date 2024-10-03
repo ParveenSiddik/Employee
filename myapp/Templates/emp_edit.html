@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+
+
+
+{%block main_block%}
+
+    <div class="container"></div>
+    <div class="row justify-content-center">
+        <div class="col-2"></div>
+    <div class="col-8">   
+    <form action="" method="post" class="w-80 border rounded mx-auto p-5 shadow bg-secondary " >
+        <h2 class="text-center my-3 ">Employee Update</h2>
+        {%csrf_token%}
+        {{form}}
+
+    <button type="submit" class="btn btn-info form-control bg-dark text-light mt-4">Update</button>
+
+    </form>
+</div>
+<div class="col-2"></div>
+    </div>
+    </div>
+{%endblock%}   
+{%block script_block%}
+{%endblock%}

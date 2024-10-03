@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{%block main_block%}
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12">
+
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>department</th>
+                        <th>Salary</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+                    </tr>
+                    <tr>
+                <td>{{employee.name}}</td>
+                <td>{{employee.designation}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.salary}}</td>
+                <td>{{employee.contact}}</td>
+                <td>{{employee.address}}</td>
+
+               </tr>
+            </div>
+            
+
+        </div>
+    </div>
+    
+{%endblock%}
